@@ -1,0 +1,5 @@
+question,expected_file_contains,expected_page,expected_answer_contains,should_refuse
+What is the remote work policy?,hr_policy,1,two days,false
+What is the password length requirement?,security_policy,1,12 characters,false
+What should engineers do before deploying code?,engineering_sop,1,pull request,false
+What is the company car policy?,,,could not find,true
