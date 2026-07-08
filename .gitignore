@@ -10,3 +10,6 @@ dist/
 .DS_Store
 data/uploads/
 *.log
+backend/data/uploads/
+backend/trustdoc.db
+frontend/dist/
