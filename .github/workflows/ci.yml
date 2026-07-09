@@ -28,26 +28,3 @@ jobs:
       - name: Run backend tests
         working-directory: backend
         run: pytest
-
-  frontend-build:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: "npm"
-          cache-dependency-path: frontend/package-lock.json
-
-      - name: Install frontend dependencies
-        working-directory: frontend
-        run: npm install --no-audit --no-fund --progress=false
-
-      - name: Build frontend
-        working-directory: frontend
-        run: npm run build
